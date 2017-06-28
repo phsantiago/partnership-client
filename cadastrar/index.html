@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+  <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+  <title>PartnerShip - Cadastro</title>
+
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <!-- For Windows Phone -->
+
+
+  <!-- CORE CSS-->
+  
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->    
+    <link href="css/custom-style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- CSS style Horizontal Nav (Layout 03)-->    
+    <link href="css/style-horizontal.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+
+<body>
+  <!-- Start Page Loading -->
+  <div id="loader-wrapper">
+      <div id="loader"></div>        
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
+  <!-- End Page Loading -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START HEADER -->
+  <header id="header" class="page-topbar">
+        <!-- start header nav-->
+        <div class="navbar-fixed">
+            <nav class="cyan">
+                <div class="nav-wrapper">                    
+                    
+                    <ul class="left">
+                      <li class="no-hover"><a href="#" data-activates="slide-out" class="menu-sidebar-collapse btn-floating btn-flat btn-medium waves-effect waves-light cyan hide-on-large-only"><i class="mdi-navigation-menu" ></i></a></li>
+                      <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/logo.png" alt="PartnerShip logo"></a> <span class="logo-text">PartnerShip</span></h1></li>
+                    </ul>
+                    <div class="header-search-wrapper hide-on-med-and-down">
+                        <i class="mdi-action-search"></i>
+                        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Procurar em PartnerShip"/>
+                    </div>
+                    <ul class="right hide-on-med-and-down">                        
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-navigation-apps"></i></a>
+                        </li>                        
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-social-notifications"></i></a>
+                        </li>    
+                    </ul>
+                </div>
+            </nav>
+            <!-- HORIZONTL NAV START-->
+            <nav id="horizontal-nav" class="white hide-on-med-and-down">
+                <div class="nav-wrapper">                  
+                  <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li>
+                        <a href="../admin/index.html" class="cyan-text">
+                            <i class="mdi-action-dashboard"></i>
+                            <span>Relatório</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a class="dropdown-menu cyan-text" href="#!" data-activates="Formsdropdown">
+                            <i class="mdi-editor-insert-comment"></i>
+                            <span>Cadastro<i class="right"></i></span>
+                        </a>
+                    </li>                    
+                  </ul>
+                </div>
+              </nav>
+            <!-- HORIZONTL NAV END-->
+        </div>
+        <!-- end header nav-->
+  </header>
+  <!-- END HEADER -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START MAIN -->
+  <div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+
+      <!-- START LEFT SIDEBAR NAV-->
+      <aside id="left-sidebar-nav">
+        <ul id="slide-out" class="side-nav leftside-navigation">
+            <li class="user-details cyan darken-2">
+                <div class="row">
+                    <div class="col col s4 m4 l4">
+                        <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+                    </div>
+                    <div class="col col s8 m8 l8">
+                        <ul id="profile-dropdown" class="dropdown-content">
+                            <li><a href="#"><i class="mdi-action-face-unlock"></i> Profile</a>
+                            </li>
+                            <li><a href="#"><i class="mdi-action-settings"></i> Settings</a>
+                            </li>
+                            <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
+                            </li>
+                            <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">John Doe<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                        <p class="user-roal">Administrator</p>
+                    </div>
+                </div>
+            </li>
+            <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+            </li>
+            <li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
+            </li>
+            <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> Calender</a>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-invert-colors"></i> CSS</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="css-typography.html">Typography</a>
+                                </li>                                        
+                                <li><a href="css-icons.html">Icons</a>
+                                </li>
+                                <li><a href="css-shadow.html">Shadow</a>
+                                </li>
+                                <li><a href="css-media.html">Media</a>
+                                </li>
+                                <li><a href="css-sass.html">Sass</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-palette"></i> UI Elements</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="ui-buttons.html">Buttons</a>
+                                </li>
+                                <li><a href="ui-badges.html">Badges</a>
+                                </li>
+                                <li><a href="ui-cards.html">Cards</a>
+                                </li>
+                                <li><a href="ui-collections.html">Collections</a>
+                                </li>
+                                <li><a href="ui-accordions.html">Accordian</a>
+                                </li>
+                                <li><a href="ui-tabs.html">Tabs</a>
+                                </li>
+                                <li><a href="ui-navbar.html">Navbar</a>
+                                </li>
+                                <li><a href="ui-pagination.html">Pagination</a>
+                                </li>
+                                <li><a href="ui-preloader.html">Preloader</a>
+                                </li>
+                                <li><a href="ui-modals.html">Modals</a>
+                                </li>
+                                <li><a href="ui-media.html">Media</a>
+                                </li>
+                                <li><a href="ui-toasts.html">Toasts</a>
+                                </li>
+                                <li><a href="ui-tooltip.html">Tooltip</a>
+                                </li>
+                                <li><a href="ui-waves.html">Waves</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a href="app-widget.html" class="waves-effect waves-cyan"><i class="mdi-device-now-widgets"></i> Widgets <span class="new badge"></span></a>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-border-all"></i> Tables</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="table-basic.html">Basic Tables</a>
+                                </li>
+                                <li><a href="table-data.html">Data Tables</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-insert-comment active"></i> Forms</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li class="active"><a href="form-elements.html">Form Elements</a>
+                                </li>
+                                <li><a href="form-layouts.html">Form Layouts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-social-pages"></i> Pages</a>
+                        <div class="collapsible-body">
+                            <ul>                                        
+                                <li><a href="page-contact.html">Contact Page</a>
+                                </li>
+                                <li><a href="page-todo.html">ToDos</a>
+                                </li>
+                                <li><a href="page-blog-1.html">Blog Type 1</a>
+                                </li>
+                                <li><a href="page-blog-2.html">Blog Type 2</a>
+                                </li>
+                                <li><a href="page-404.html">404</a>
+                                </li>
+                                <li><a href="page-500.html">500</a>
+                                </li>
+                                <li><a href="page-blank.html">Blank</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-shopping-cart"></i> eCommers</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="eCommerce-products-page.html">Products Page</a>
+                                </li>                                        
+                                <li><a href="eCommerce-pricing.html">Pricing Table</a>
+                                </li>
+                                <li><a href="eCommerce-invoice.html">Invoice</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-image"></i> Medias</a>
+                        <div class="collapsible-body">
+                            <ul>                                        
+                                <li><a href="media-gallary-page.html">Gallery Page</a>
+                                </li>
+                                <li><a href="media-hover-effects.html">Image Hover Effects</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-account-circle"></i> User</a>
+                        <div class="collapsible-body">
+                            <ul>     
+                                <li><a href="user-profile-page.html">User Profile</a>
+                                </li>                                   
+                                <li><a href="user-login.html">Login</a>
+                                </li>                                        
+                                <li><a href="user-register.html">Register</a>
+                                </li>
+                                <li><a href="user-forgot-password.html">Forgot Password</a>
+                                </li>
+                                <li><a href="user-lock-screen.html">Lock Screen</a>
+                                </li>                                        
+                                <li><a href="user-session-timeout.html">Session Timeout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-insert-chart"></i> Charts</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="charts-chartjs.html">Chart JS</a>
+                                </li>
+                                <li><a href="charts-chartist.html">Chartist</a>
+                                </li>
+                                <li><a href="charts-morris.html">Morris Charts</a>
+                                </li>
+                                <li><a href="charts-xcharts.html">xCharts</a>
+                                </li>
+                                <li><a href="charts-flotcharts.html">Flot Charts</a>
+                                </li>
+                                <li><a href="charts-sparklines.html">Sparkline Charts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="li-hover"><div class="divider"></div></li>
+            <li class="li-hover"><p class="ultra-small margin more-text">MORE</p></li>
+            <li><a href="css-grid.html"><i class="mdi-image-grid-on"></i> Grid</a>
+            </li>
+            <li><a href="css-color.html"><i class="mdi-editor-format-color-fill"></i> Color</a>
+            </li>
+            <li><a href="css-helpers.html"><i class="mdi-communication-live-help"></i> Helpers</a>
+            </li>
+            <li><a href="changelogs.html"><i class="mdi-action-swap-vert-circle"></i> Changelogs</a>
+            </li>                    
+            <li class="li-hover"><div class="divider"></div></li>
+            <li class="li-hover"><p class="ultra-small margin more-text">Daily Sales</p></li>
+            <li class="li-hover">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div class="sample-chart-wrapper">                            
+                            <div class="ct-chart ct-golden-section" id="ct2-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
+      </aside>
+      <!-- END LEFT SIDEBAR NAV-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+      <!-- START CONTENT -->
+      <section id="content">
+
+        <!--breadcrumbs start-->
+        <div id="breadcrumbs-wrapper" class=" grey lighten-3">
+            <!-- Search for small screen -->
+            <div class="header-search-wrapper grey hide-on-large-only">
+                <i class="mdi-action-search active"></i>
+                <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+            </div>
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <h5 class="breadcrumbs-title">Controle de Ocorrencias</h5>
+                <ol class="breadcrumb">
+                  <li><a href="index.html">Relatório</a>
+                  </li>
+                  <li class="active">Cadastro</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--breadcrumbs end-->
+
+
+        <!--start container-->
+        <div class="container">
+          <div class="section">
+
+            <p class="caption">A informação é uma ferramenta importante para as empresas que pretendem ser líderes de mercado, quem domina a informação e faz um bom uso desses dados pode ter vantagem competitiva. Nesta área, você pode auxiliar no controle das informações, preenchendo com exatidão as ocorrências diárias atreladas as atividades do departamento.</p>
+
+            <div class="divider"></div>
+            <!--Input Select-->
+            <div class="section">
+              <h4 class="header">Lançamento de ocorrências</h4>
+              <div class="row">
+                <div class="col s12 m4 l3">
+                  <p> 
+                    Ordem de venda: número interno do pedido do cliente.<br/><br/>
+                    Área de Negócio: Departamento interno relacionado a ocorrência.<br/><br/>
+                    Fábrica: Local onde o carregamento foi realizado.<br/><br/>
+                    Área Responsável: Área responsável por ocasionar a ocorrência.<br/><br/>
+                    Analista Responsável: Analista de Logística responsável pelo processo de entrega.<br/><br/>
+                    Tipo de Ocorrência: Filtro principal de ocorrências.<br/><br/>
+                    Fornecedor: Prestador de serviço relacionado a ocorrência.<br/><br/>
+                    
+                    Campos para preenchimento das informações relacionadas as ocorrências. <br/><br/>
+                    Solicita-se o preenchimento da maior quantidade de informações possíveis.
+                   </p>
+                </div>
+                <div class="col s12 m8 l9">
+                  <div class="input-field col s12">
+                      <input id="order-id" type="text" length="10">
+                      <label for="order-id">Ordem de venda</label>
+                  </div>
+                  <div id="input-select"> 
+                    <div class="input-field col s12">
+                      <label>Área de Negócio</label>
+                      <select>
+                        <option value="" disabled selected>Escolha uma área</option>
+                        <option value="1">Alimentos</option>
+                        <option value="1">Variedades</option>
+                        <option value="1">Perfumaria</option>
+                        <option value="1">Vestuário</option>
+                        <option value="1">X - Não relacionado com a área de negócio</option>
+                      </select>
+                    </div>
+                    <div class="input-field col s12">
+                      <label>Fábrica</label>
+                      <select>
+                        <option value="" disabled selected>Escolha uma fábrica</option>
+                        <option value="1">Alemanha</option>
+                        <option value="1">Argentina</option>
+                        <option value="1">Austrália</option>
+                        <option value="1">Brasil</option>
+                        <option value="1">Canada</option>
+                        <option value="1">China</option>
+                        <option value="1">India</option>
+                        <option value="1">Indonésia</option>
+                        <option value="1">Italia</option>
+                        <option value="1">x - Não relacionado</option>
+                      </select>
+                    </div>
+                    <div class="input-field col s12">
+                      <label>Área Responsável</label>
+                      <select>
+                        <option value="" disabled selected>Escolha uma área</option>
+                        <option value="1">ARMAZEM</option>
+                        <option value="1">CIA MARITIMA</option>
+                        <option value="1">CLIENTE</option>
+                        <option value="1">DESPACHANTE</option>
+                        <option value="1">EXPEDIÇÃO</option>
+                        <option value="1">FABRICA</option>
+                        <option value="1">LOGISTICA</option>
+                        <option value="1">RECEITA FEDERAL</option>
+                        <option value="1">TERMINAL</option>
+                        <option value="1">TI</option>
+                        <option value="1">TRANSPORTADORA</option>
+                        <option value="1">VENDAS</option>
+                      </select>
+                    </div>
+                    <div class="input-field col s12">
+                      <label>Analista Responsável</label>
+                      <select>
+                        <option value="" disabled selected>Escolha um analista</option>
+                        <option value="1">BEATRIZ</option>
+                        <option value="1">JOSE</option>
+                        <option value="1">JOSENYR</option>
+                        <option value="1">LAURA</option>
+                        <option value="1">LUCAS</option>
+                        <option value="1">LUIS OTAVIO</option>
+                        <option value="1">MICHELLE</option>
+                        <option value="1">MOISES</option>
+                        <option value="1">RAFAEL</option>
+                        <option value="1">REBECCA</option>
+                      </select>
+                    </div>
+                    <div class="input-field col s12">
+                      <label>Tipo da Ocorrência</label>
+                      <select>
+                        <option value="" disabled selected>Escolha um tipo</option>
+                        <option value="1">Acidente com o Veículo</option>
+                        <option value="1">Alteração Deadline</option>
+                        <option value="1">Alteração de estufagem</option>
+                        <option value="1">Alteração de Fábrica</option>
+                        <option value="1">Alteração Navio</option>
+                        <option value="1">Alteração de Terminal de Embarque</option>
+                        <option value="1">Alteração de Transportadora</option>
+                        <option value="1">Antecipação da Entrega</option>
+                        <option value="1">Antecipação de carregamento</option>
+                        <option value="1">Antecipação de Pedido</option>
+                        <option value="1">Armazenagem</option>
+                        <option value="1">Atraso de carregamento</option>
+                        <option value="1">Atraso de Navio</option>
+                        <option value="1">Atraso Draft</option>
+                        <option value="1">Atraso na Coleta</option>
+                        <option value="1">Atraso na Descarga</option>
+                        <option value="1">Atraso na entrega</option>
+                        <option value="1">Atraso na Liberação de Crédito</option>
+                        <option value="1">Atraso no Carregamento</option>
+                        <option value="1">Atraso no envio da NF</option>
+                        <option value="1">Atraso Vendas</option>
+                        <option value="1">Avaria</option>
+                        <option value="1">Cadastramento Eletronico Dados</option>
+                        <option value="1">Canal Vermelho / Laranja</option>
+                        <option value="1">Cancelamento de Embarque</option>
+                        <option value="1">Cancelamento de Estufagem</option>
+                        <option value="1">Coleta Fora do Prazo</option>
+                        <option value="1">Comunicação Falha</option>
+                        <option value="1">Conduta Comportamental do Motorista</option>
+                        <option value="1">Container fora do padrão</option>
+                        <option value="1">Deposito de Container Fora do Prazo</option>
+                        <option value="1">Detention</option>
+                        <option value="1">Devolução de Equipamento</option>
+                        <option value="1">Devolução da Mercadoria</option>
+                        <option value="1">Documentação Regulatório Desatualizada</option>
+                        <option value="1">Emissão de NF incorreta</option>
+                        <option value="1">Entrega em local incorreto</option>
+                        <option value="1">Equipamento Fora do Padrão</option>
+                        <option value="1">Erro dados de Draft</option>
+                        <option value="1">Estadia</option>
+                        <option value="1">Estufagem incorreta</option>
+                        <option value="1">Etiquetagem</option>
+                        <option value="1">Falha de Informação</option>
+                        <option value="1">Falta / Erro de fornecimento</option>
+                        <option value="1">Falta de equipamento</option>
+                        <option value="1">Falta de espaço no cliente</option>
+                        <option value="1">Falta de Estoque</option>
+                        <option value="1">Falta de Etiquetas para descarregar Importação</option>
+                        <option value="1">Falta de informação</option>
+                        <option value="1">Falta de Janela Terminal</option>
+                        <option value="1">Falta de Lacre</option>
+                        <option value="1">Falta de Laudo</option>
+                        <option value="1">Falta de Ordem de Coleta</option>
+                        <option value="1">Falta de picking</option>
+                        <option value="1">Falta de produto</option>
+                        <option value="1">Falta de Programação</option>
+                        <option value="1">Faturamento Incorreto</option>
+                        <option value="1">Fornecimento incorreto</option>
+                        <option value="1">Frete Adicional</option>
+                        <option value="1">Frete complemento</option>
+                        <option value="1">Gate antecipado</option>
+                        <option value="1">Greve</option>
+                        <option value="1">Importação cod. Incorreto</option>
+                        <option value="1">ANVISA</option>
+                        <option value="1">Lacre Incorreto</option>
+                        <option value="1">Liberação de Documento</option>
+                        <option value="1">Liberação de Veículo sem NF</option>
+                        <option value="1">Local de Estufagem Incorreto</option>
+                        <option value="1">Multa</option>
+                        <option value="1">Não cumprimento da programação</option>
+                        <option value="1">Ordem de Coleta incorreta</option>
+                        <option value="1">OUTROS</option>
+                        <option value="1">Erro no pedido</option>
+                        <option value="1">Perda de Embarque</option>
+                        <option value="1">Posicionamento de container</option>
+                        <option value="1">Pré-stacking</option>
+                        <option value="1">Quebra Lote</option>
+                        <option value="1">Reentrega</option>
+                        <option value="1">Reserva Incorreta</option>
+                        <option value="1">Revisão de Pedido</option>
+                        <option value="1">Rolagem de carga</option>
+                        <option value="1">Rompimento de Lacre</option>
+                        <option value="1">Sistema - TI</option>
+                        <option value="1">Sobra de Mercadoria</option>
+                        <option value="1">Terminal de Embarque Incorreto</option>
+                        <option value="1">Tombamento de Carga</option>
+                        <option value="1">Troca de Lacre</option>
+                        <option value="1">Troca de mercadoria</option>
+                        <option value="1">Up-grade</option>
+                        <option value="1">Veículo fora do padrão</option>
+                        <option value="1">Veículo quebrado</option>
+                      </select>
+                    </div>
+                    <div class="input-field col s12">
+                      <label>Fornecedor</label>
+                      <select>
+                        <option value="" disabled selected>Escolha um fornecedor</option>
+                        <option value="1">ACCORD</option>
+                        <option value="1">ADTEC</option>
+                        <option value="1">AGILITY</option>
+                        <option value="1">ALDA</option>
+                        <option value="1">AMENDUPÃ</option>
+                        <option value="1">AMERICAN TRUCKS</option>
+                        <option value="1">ASIA SHIPPING</option>
+                        <option value="1">ATDL</option>
+                        <option value="1">ATDL DOM</option>
+                        <option value="1">BARTHOLO</option>
+                        <option value="1">BINACIONAL</option>
+                        <option value="1">BOMI</option>
+                        <option value="1">BORG</option>
+                        <option value="1">BRADO</option>
+                        <option value="1">BTP</option>
+                        <option value="1">CCNI</option>
+                        <option value="1">CESARI</option>
+                        <option value="1">CESLOG</option>
+                        <option value="1">CJB</option>
+                        <option value="1">CLIENTE RETIRA</option>
+                        <option value="1">CMA CGM</option>
+                        <option value="1">COLINAS DOM</option>
+                        <option value="1">CONTRAIL</option>
+                        <option value="1">COOPERCARGA</option>
+                        <option value="1">COSER</option>
+                        <option value="1">COVRE</option>
+                        <option value="1">COVRE DOM</option>
+                        <option value="1">CSAV</option>
+                        <option value="1">DALASTRA</option>
+                        <option value="1">DC</option>
+                        <option value="1">DELZAN</option>
+                        <option value="1">DHL</option>
+                        <option value="1">DON SANTOS</option>
+                        <option value="1">EGA</option>
+                        <option value="1">EMBRAPORT</option>
+                        <option value="1">ERB</option>
+                        <option value="1">FESHI</option>
+                        <option value="1">FICEBRAS</option>
+                        <option value="1">GEOBOX</option>
+                        <option value="1">GLOBAL</option>
+                        <option value="1">GRANELEIRO</option>
+                        <option value="1">GREENROAD</option>
+                        <option value="1">GRIMALDI</option>
+                        <option value="1">GSA</option>
+                        <option value="1">HANJIN</option>
+                        <option value="1">HAPAG-LLOYD</option>
+                        <option value="1">HSUD</option>
+                        <option value="1">HYUNDAI</option>
+                        <option value="1">K+N</option>
+                        <option value="1">K-LINE (UNIMAR)</option>
+                        <option value="1">LIBRA T-37</option>
+                        <option value="1">LIBRA TEVAL</option>
+                        <option value="1">LOCA ESPAÇO  </option>
+                        <option value="1">LOCAESPAÇO</option>
+                        <option value="1">LOCAESPACO DOM</option>
+                        <option value="1">LOCAESPAÇO DOM</option>
+                        <option value="1">LOCAESPAÇO DOM </option>
+                        <option value="1">MAERSK</option>
+                        <option value="1">MAHNIC</option>
+                        <option value="1">Marvel</option>
+                        <option value="1">MELFI</option>
+                        <option value="1">MOL</option>
+                        <option value="1">MONTE MORENSE</option>
+                        <option value="1">MONTESANTO</option>
+                        <option value="1">MSC</option>
+                        <option value="1">MSC LOG</option>
+                        <option value="1">NKY</option>
+                        <option value="1">NYK</option>
+                        <option value="1">OUTROS</option>
+                        <option value="1">PARATI</option>
+                        <option value="1">PIETROBOM</option>
+                        <option value="1">PIETROBOM DOM</option>
+                        <option value="1">PIL</option>
+                        <option value="1">PK (UNIOCEAN)</option>
+                        <option value="1">PORTO SECO DOM</option>
+                        <option value="1">PRODUQUIMICA</option>
+                        <option value="1">RA LOGISTICA</option>
+                        <option value="1">RAK LOG</option>
+                        <option value="1">RAK LOG DOM</option>
+                        <option value="1">REAL CARGAS</option>
+                        <option value="1">RETIRA</option>
+                        <option value="1">RIOLOG</option>
+                        <option value="1">RODO NASA</option>
+                        <option value="1">SAFMARINE</option>
+                        <option value="1">SANTOS BRASIL</option>
+                        <option value="1">SAVL</option>
+                        <option value="1">SCHENKER</option>
+                        <option value="1">SEALAND</option>
+                        <option value="1">SECHINATO</option>
+                        <option value="1">SIBRA</option>
+                        <option value="1">SUL ATLANTICO</option>
+                        <option value="1">TECMAR</option>
+                        <option value="1">TGA</option>
+                        <option value="1">Tranp. Do Cliente</option>
+                        <option value="1">TRANS GREGO </option>
+                        <option value="1">TRANS M</option>
+                        <option value="1">TRANS M DOM</option>
+                        <option value="1">TRANSFALLS</option>
+                        <option value="1">TRANSGREGO </option>
+                        <option value="1">TRANSPAULO DOM</option>
+                        <option value="1">TRANSPORTE ASTUDILLO</option>
+                        <option value="1">TRANSPORTE RIO COLORADO</option>
+                        <option value="1">TRANSPORTE URIBE</option>
+                        <option value="1">TSA</option>
+                        <option value="1">UASC</option>
+                        <option value="1">UNILINE</option>
+                        <option value="1">UNIMAR</option>
+                        <option value="1">UNIOCEAN</option>
+                        <option value="1">VECOINTER</option>
+                        <option value="1">VIEIRA & FIGUEIRA</option>
+                        <option value="1">VIEIRA & FIGUEIRA DOM</option>
+                        <option value="1">VIRMONT</option>
+                        <option value="1">WAN HAI</option>
+                        <option value="1">YANG MING</option>
+                        <option value="1">ZIM</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+            <!--Input Checkboxes-->
+            <div id="input-checkboxes" class="section">
+              <h4 class="header">Consequência</h4>
+              <div class="row">
+                <div class="col s12 m4 l3">
+                  <p>Impacto que a ocorrência teve na prestação do serviço.</p>
+                </div>
+                <div class="col s12 m8 l9">
+                  <form action="#">
+                    <p>
+                      <input type="checkbox" id="test6" />
+                      <label for="test6">Atraso na entrega</label>
+                    </p>
+                    <p>
+                      <input type="checkbox" id="test7" />
+                      <label for="test7">Perda de embarque</label>
+                    </p>
+                    <p>
+                      <input type="checkbox" id="test8" />
+                      <label for="test8">Custo extra</label>
+                    </p>
+                    <div>
+                      <input type="checkbox" id="test9" />
+                      <label for="test9">
+                          <input type="text" placeholder="Outros" style="    position: relative;
+                            top: -3px;
+                            height: 27px;" class="validate">
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!--Input Date Picker-->
+            <div id="input-date-picker" class="section">
+              <h4 class="header">Data da Ocorrência</h4>
+              <div class="row">
+                <div class="col s12 m4 l3">
+                  <p>Data em que ocorreu o problema com a ordem de venda.</p>
+                </div>
+                <div class="col s12 m8 l9">
+                  <div class="input-field col s6">
+                    <i class="mdi-action-today prefix"></i>
+                    <input id="date-occurence" type="date" class="datepicker">
+                    <label for="date-occurence">Data</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+            <!--Input Character Counter-->
+            <div id="input-character-counter" class="section">
+              <h4 class="header">Despesa</h4>
+              <div class="row">
+                <div class="col s12 m4 l3">
+                  <p>
+                    Quantidade Equipamento: Quantidade de containers, sacaria, pallets relacionados a ocorrência<br/>
+                    Valor do Custo: Despesa extra ocasionada pela ocorrência registrada, se houver. <br/><br/>
+                    Obs. Descrição detalhada da ocorrência.</p>
+                </div>
+                <div class="col s12 m8 l9">
+                  <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s3">
+                          <input id="input_text" type="text" length="10">
+                          <label for="input_text">Quantidade</label>
+                        </div>
+                        <div class="input-field col s3">
+                          <input id="input_text" type="text" length="10">
+                          <label for="input_text">Valor</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="textarea2" class="materialize-textarea" length="120"></textarea>
+                          <label for="textarea1">Observações</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>        
+            <div class="divider"></div>
+            <div class="col s12 m8 l9">
+              <a class="waves-effect waves-light btn" style="margin-top: 30px;"><i class="material-icons right">send</i>Enviar</a>
+            </div>
+        </div>
+    </div>
+  <!--end container-->
+
+
+
+
+  </section>
+  <!-- END CONTENT -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+  <!-- START RIGHT SIDEBAR NAV-->
+  <aside id="right-sidebar-nav">
+        <ul id="chat-out" class="side-nav rightside-navigation">
+            <li class="li-hover">
+            <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
+            <div id="right-search" class="row">
+                <form class="col s12">
+                    <div class="input-field">
+                        <i class="mdi-action-search prefix"></i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Search</label>
+                    </div>
+                </form>
+            </div>
+            </li>
+            <li class="li-hover">
+                <ul class="chat-collapsible" data-collapsible="expandable">
+                <li>
+                    <div class="collapsible-header teal white-text active"><i class="mdi-social-whatshot"></i>Recent Activity</div>
+                    <div class="collapsible-body recent-activity">
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-add-shopping-cart"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">just now</a>
+                                <p>Jim Doe Purchased new equipments for zonal office.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-device-airplanemode-on"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">Yesterday</a>
+                                <p>Your Next flight for USA will be on 15th August 2015.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">5 Days Ago</a>
+                                <p>Natalya Parker Send you a voice mail for next conference.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-store"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">Last Week</a>
+                                <p>Jessy Jay open a new store at S.G Road.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="#">5 Days Ago</a>
+                                <p>Natalya Parker Send you a voice mail for next conference.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header light-blue white-text active"><i class="mdi-editor-attach-money"></i>Sales Repoart</div>
+                    <div class="collapsible-body sales-repoart">
+                        <div class="sales-repoart-list  chat-out-list row">
+                            <div class="col s8">Target Salse</div>
+                            <div class="col s4"><span id="sales-line-1"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Payment Due</div>
+                            <div class="col s4"><span id="sales-bar-1"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Total Delivery</div>
+                            <div class="col s4"><span id="sales-line-2"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Total Progress</div>
+                            <div class="col s4"><span id="sales-bar-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Favorite Associates</div>
+                    <div class="collapsible-body favorite-associates">
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Eileen Sideways</p>
+                                <p class="place">Los Angeles, CA</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Zaham Sindil</p>
+                                <p class="place">San Francisco, CA</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Renov Leongal</p>
+                                <p class="place">Cebu City, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Weno Carasbong</p>
+                                <p>Tokyo, Japan</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Nusja Nawancali</p>
+                                <p class="place">Bangkok, Thailand</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                </ul>
+            </li>
+        </ul>
+      </aside>
+  <!-- LEFT RIGHT SIDEBAR NAV-->
+
+  </div>
+  <!-- END WRAPPER -->
+
+  </div>
+  <!-- END MAIN -->
+
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START FOOTER -->
+  <footer class="page-footer">
+    <div class="footer-copyright">
+            <div class="container">
+                Copyright © 2017 <a class="grey-text text-lighten-4" href="#" target="_blank">PartnerShip</a> Todos direitos reservados.
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+
+    <!-- ================================================
+    Scripts
+    ================================================ -->
+    
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>    
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--prism-->
+    <script type="text/javascript" src="js/prism.js"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- chartist -->
+    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
+    
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.js"></script>
+    
+</body>
+
+
+<!-- Mirrored from demo.geekslabs.com/materialize/v2.1/layout03/form-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Aug 2015 16:05:47 GMT -->
+</html>
