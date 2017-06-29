@@ -34,7 +34,8 @@
     <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
-
+    <link href="../../../../cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="js/plugins/data-tables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 
 </head>
 
@@ -95,238 +96,19 @@
                 </div>
               </nav>
         </div>
-        <!-- end header nav-->
     </header>
-    <!-- END HEADER -->
-
-    <!-- //////////////////////////////////////////////////////////////////////////// -->
-
-    <!-- START MAIN -->
     <div id="main" style="margin-top: 70px;">
-        <!-- START WRAPPER -->
         <div class="wrapper">
-
-            <!-- START LEFT SIDEBAR NAV-->
             <aside id="left-sidebar-nav hide-on-large-only">
                 <ul id="slide-out" class="side-nav leftside-navigation ">
-                    <li class="user-details cyan darken-2">
-                        <div class="row">
-                            <div class="col col s4 m4 l4">
-                                <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
-                            </div>
-                            <div class="col col s8 m8 l8">
-                                <ul id="profile-dropdown" class="dropdown-content">
-                                    <li><a href="#"><i class="mdi-action-face-unlock"></i> Profile</a>
-                                    </li>
-                                    <li><a href="#"><i class="mdi-action-settings"></i> Settings</a>
-                                    </li>
-                                    <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
-                                    </li>
-                                    <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
-                                    </li>
-                                </ul>
-                                <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">John Doe<i class="mdi-navigation-arrow-drop-down right"></i></a>
-                                <p class="user-roal">Administrator</p>
-                            </div>
-                        </div>
+                    <li class="bold active"><a class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Relatório</a>
                     </li>
-                    <li class="bold active"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
-                    </li>
-                    <li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
-                    </li>
-                    <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> Calender</a>
-                    </li>
-                    <li class="no-padding">
-                        <ul class="collapsible collapsible-accordion">
-                            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-invert-colors"></i> CSS</a>
-                                <div class="collapsible-body">
-                                    <ul>
-                                        <li><a href="css-typography.html">Typography</a>
-                                        </li>                                        
-                                        <li><a href="css-icons.html">Icons</a>
-                                        </li>
-                                        <li><a href="css-shadow.html">Shadow</a>
-                                        </li>
-                                        <li><a href="css-media.html">Media</a>
-                                        </li>
-                                        <li><a href="css-sass.html">Sass</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-palette"></i> UI Elements</a>
-                                <div class="collapsible-body">
-                                    <ul>
-                                        <li><a href="ui-buttons.html">Buttons</a>
-                                        </li>
-                                        <li><a href="ui-badges.html">Badges</a>
-                                        </li>
-                                        <li><a href="ui-cards.html">Cards</a>
-                                        </li>
-                                        <li><a href="ui-collections.html">Collections</a>
-                                        </li>
-                                        <li><a href="ui-accordions.html">Accordian</a>
-                                        </li>
-                                        <li><a href="ui-tabs.html">Tabs</a>
-                                        </li>
-                                        <li><a href="ui-navbar.html">Navbar</a>
-                                        </li>
-                                        <li><a href="ui-pagination.html">Pagination</a>
-                                        </li>
-                                        <li><a href="ui-preloader.html">Preloader</a>
-                                        </li>
-                                        <li><a href="ui-modals.html">Modals</a>
-                                        </li>
-                                        <li><a href="ui-media.html">Media</a>
-                                        </li>
-                                        <li><a href="ui-toasts.html">Toasts</a>
-                                        </li>
-                                        <li><a href="ui-tooltip.html">Tooltip</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="bold"><a href="app-widget.html" class="waves-effect waves-cyan"><i class="mdi-device-now-widgets"></i> Widgets <span class="new badge"></span></a>
-                            </li>
-                            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-border-all"></i> Tables</a>
-                                <div class="collapsible-body">
-                                    <ul>
-                                        <li><a href="table-basic.html">Basic Tables</a>
-                                        </li>
-                                        <li><a href="table-data.html">Data Tables</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-insert-comment"></i> Forms</a>
-                                <div class="collapsible-body">
-                                    <ul>
-                                        <li><a href="form-elements.html">Form Elements</a>
-                                        </li>
-                                        <li><a href="form-layouts.html">Form Layouts</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-social-pages"></i> Pages</a>
-                                <div class="collapsible-body">
-                                    <ul>                                        
-                                        <li><a href="page-contact.html">Contact Page</a>
-                                        </li>
-                                        <li><a href="page-todo.html">ToDos</a>
-                                        </li>
-                                        <li><a href="page-blog-1.html">Blog Type 1</a>
-                                        </li>
-                                        <li><a href="page-blog-2.html">Blog Type 2</a>
-                                        </li>
-                                        <li><a href="page-404.html">404</a>
-                                        </li>
-                                        <li><a href="page-500.html">500</a>
-                                        </li>
-                                        <li><a href="page-blank.html">Blank</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-shopping-cart"></i> eCommers</a>
-                                <div class="collapsible-body">
-                                    <ul>
-                                        <li><a href="eCommerce-products-page.html">Products Page</a>
-                                        </li>                                        
-                                        <li><a href="eCommerce-pricing.html">Pricing Table</a>
-                                        </li>
-                                        <li><a href="eCommerce-invoice.html">Invoice</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-image"></i> Medias</a>
-                                <div class="collapsible-body">
-                                    <ul>                                        
-                                        <li><a href="media-gallary-page.html">Gallery Page</a>
-                                        </li>
-                                        <li><a href="media-hover-effects.html">Image Hover Effects</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-account-circle"></i> User</a>
-                                <div class="collapsible-body">
-                                    <ul>     
-                                        <li><a href="user-profile-page.html">User Profile</a>
-                                        </li>                                   
-                                        <li><a href="user-login.html">Login</a>
-                                        </li>                                        
-                                        <li><a href="user-register.html">Register</a>
-                                        </li>
-                                        <li><a href="user-forgot-password.html">Forgot Password</a>
-                                        </li>
-                                        <li><a href="user-lock-screen.html">Lock Screen</a>
-                                        </li>                                        
-                                        <li><a href="user-session-time-out.html">Session Timeout</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            
-                            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-insert-chart"></i> Charts</a>
-                                <div class="collapsible-body">
-                                    <ul>
-                                        <li><a href="charts-chartjs.html">Chart JS</a>
-                                        </li>
-                                        <li><a href="charts-chartist.html">Chartist</a>
-                                        </li>
-                                        <li><a href="charts-morris.html">Morris Charts</a>
-                                        </li>
-                                        <li><a href="charts-xcharts.html">xCharts</a>
-                                        </li>
-                                        <li><a href="charts-flotcharts.html">Flot Charts</a>
-                                        </li>
-                                        <li><a href="charts-sparklines.html">Sparkline Charts</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="li-hover"><div class="divider"></div></li>
-                    <li class="li-hover"><p class="ultra-small margin more-text">MORE</p></li>
-                    <li><a href="css-grid.html"><i class="mdi-image-grid-on"></i> Grid</a>
-                    </li>
-                    <li><a href="css-color.html"><i class="mdi-editor-format-color-fill"></i> Color</a>
-                    </li>
-                    <li><a href="css-helpers.html"><i class="mdi-communication-live-help"></i> Helpers</a>
-                    </li>
-                    <li><a href="changelogs.html"><i class="mdi-action-swap-vert-circle"></i> Changelogs</a>
-                    </li>                    
-                    <li class="li-hover"><div class="divider"></div></li>
-                    <li class="li-hover"><p class="ultra-small margin more-text">Daily Sales</p></li>
-                    <li class="li-hover">
-                        <div class="row">
-                            <div class="col s12 m12 l12">
-                                <div class="sample-chart-wrapper">                            
-                                    <div class="ct-chart ct-golden-section" id="ct2-chart"></div>
-                                </div>
-                            </div>
-                        </div>
+                    <li class="bold"><a href="../cadastrar/index.html" class="collapsible-header  waves-effect waves-cyan">    <i class="mdi-editor-border-all"></i> Cadastro</a>
                     </li>
                 </ul>
-                <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
             </aside>
-            <!-- END LEFT SIDEBAR NAV-->
-
-            <!-- //////////////////////////////////////////////////////////////////////////// -->
-
-            <!-- START CONTENT -->
             <section>
-
-                <!--start container-->
                 <div class="container">
-
-                    <!--chart dashboard start-->
                     <div id="chart-dashboard">
                         <div class="row">
                             <div class="col s12 m8 l8">
@@ -387,108 +169,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4">Revenue by Month <i class="mdi-navigation-close right"></i></span>
-                                        <table class="responsive-table">
-                                            <thead>
-                                                <tr>
-                                                    <th data-field="id">ID</th>
-                                                    <th data-field="month">Month</th>
-                                                    <th data-field="item-sold">Item Sold</th>
-                                                    <th data-field="item-price">Item Price</th>
-                                                    <th data-field="total-profit">Total Profit</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>January</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>February</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>March</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>April</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>5</td>
-                                                    <td>May</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>6</td>
-                                                    <td>June</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>7</td>
-                                                    <td>July</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>8</td>
-                                                    <td>August</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>9</td>
-                                                    <td>Septmber</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>10</td>
-                                                    <td>Octomber</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>11</td>
-                                                    <td>November</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>12</td>
-                                                    <td>December</td>
-                                                    <td>122</td>
-                                                    <td>100</td>
-                                                    <td>$122,00.00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-
                                 </div>
                             </div>
 
@@ -497,64 +177,162 @@
                                     <div class="card-content  teal darken-2">
                                         <div class="line-chart-wrapper">
                                             <p class="margin white-text">Ocorrencias por Parceiros</p>
-                                            <canvas id="line-chart" height="300"></canvas>
+                                            <canvas id="line-chart" height="313"></canvas>
                                         </div>
                                     </div>
-                                    <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4">Revenue by country <i class="mdi-navigation-close right"></i></span>
-                                        <table class="responsive-table">
+                                </div>
+                            </div>
+                            <div class="col s12 m12 l12">
+                                <div class="card" style="padding: 10px 20px;">
+                                    
+                                    <div id="table-datatables">
+                                      <div class="row">
+                                        <div class="col s12 m12 l12" style="overflow-x:scroll;">
+                                          <table id="data-table-simple" class="responsive-table display" cellspacing="0">
                                             <thead>
-                                                <tr>
-                                                    <th data-field="country-name">Country Name</th>
-                                                    <th data-field="item-sold">Item Sold</th>
-                                                    <th data-field="total-profit">Total Profit</th>
-                                                </tr>
+                                                <tr><td>id</td>
+                                                <td>Registro</td>
+                                                <td>Fabrica</td>
+                                                <td>Area de negocio</td>
+                                                <td>Ordem de Venda</td>
+                                                <td>Fornecedor</td>
+                                                <td>AreaResponsa</td>
+                                                <td>Ocorrencia</td>
+                                                <td>DataOcorrencia</td>
+                                                <td>Responsavel</td>
+                                                <td>Consequencia</td>
+                                                <td>Terminal</td>
+                                                <td>Quant</td>
+                                                <td>Valor</td>
+                                                <td>Obs</td></tr>
                                             </thead>
+                                         
+                                            <tfoot>
+                                                <tr><td>id</td>
+                                                <td>Registro</td>
+                                                <td>Fabrica</td>
+                                                <td>Area de negocio</td>
+                                                <td>Ordem de Venda</td>
+                                                <td>Fornecedor</td>
+                                                <td>AreaResponsa</td>
+                                                <td>Ocorrencia</td>
+                                                <td>DataOcorrencia</td>
+                                                <td>Responsavel</td>
+                                                <td>Consequencia</td>
+                                                <td>Terminal</td>
+                                                <td>Quant</td>
+                                                <td>Valor</td>
+                                                <td>Obs</td></tr>
+                                            </tfoot>
+                                         
                                             <tbody>
-                                                <tr>
-                                                    <td>USA</td>
-                                                    <td>65</td>
-                                                    <td>$452.55</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>UK</td>
-                                                    <td>76</td>
-                                                    <td>$452.55</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Canada</td>
-                                                    <td>65</td>
-                                                    <td>$452.55</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Brazil</td>
-                                                    <td>76</td>
-                                                    <td>$452.55</td>
-                                                </tr>
-                                                <tr>
+                                                <tr><td>7</td><td>24/03/2011 19:05:52</td><td>Canada</td><td>Alimentos</td><td>1</td><td>DALASTRA</td><td>TRANSPORTADORA</td><td>Multa por excesso de peso</td><td>28/12/2010</td><td>LUCAS</td><td>0</td><td>0</td><td>1</td><td></td><td>Infração 1Y672589-1</td></tr>
 
-                                                    <td>India</td>
-                                                    <td>65</td>
-                                                    <td>$452.55</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>France</td>
-                                                    <td>76</td>
-                                                    <td>$452.55</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Austrelia</td>
-                                                    <td>65</td>
-                                                    <td>$452.55</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Russia</td>
-                                                    <td>76</td>
-                                                    <td>$452.55</td>
-                                                </tr>
+                                                <tr><td>8</td><td>01/03/2011 17:53:08</td><td>Brasil</td><td>Variedades</td><td>448236</td><td>VIEIRA & FIGUEIRA DOM</td><td>VENDAS</td><td>Pedido incorreto</td><td>01/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>O CFOP do pedido estava cadastrado errada, a fábrica identificou somente no momento do faturamento, tiveram que voltar todo o processo para vendas corrigir o pedido</td></tr>
+
+                                                <tr><td>9</td><td>24/03/2011 19:09:58</td><td>Argentina</td><td>Alimentos</td><td>429491</td><td>DALASTRA</td><td>TRANSPORTADORA</td><td>Multa por excesso de peso</td><td>03/02/2011</td><td>LUCAS</td><td>0</td><td>0</td><td>1</td><td></td><td>INFRAÇÃO 1S544110-1</td></tr>
+
+                                                <tr><td>10</td><td>16/02/2011 18:36:16</td><td>India</td><td>Perfumaria</td><td>445027</td><td>TSA</td><td>TRANSPORTADORA</td><td>Não cumprimento da programação</td><td>10/02/2011</td><td>LUCAS</td><td>0</td><td>0</td><td>1</td><td></td><td>Foi passado a programação para coleta das ME's 445033 e 445027, porém foi coletado somente o pedido 445033.</td></tr>
+
+                                                <tr><td>11</td><td>15/02/2011 17:05:27</td><td>India</td><td>Vestuário</td><td>444210</td><td>DON SANTOS</td><td>FABRICA</td><td>Troca de mercadoria</td><td>11/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>A transportadora Dom Santos foi no dia 11/02 coletar os pedidos 443680 e 444210 porém a fábrica só carregou um dos pedidos pois no texto picking da ordem 443680 não constava a informação de que o pedido era conjugado. A ordem de coleta também não estava c</td></tr>
+
+                                                <tr><td>12</td><td>15/02/2011 10:03:48</td><td>Brasil</td><td>Variedades</td><td>446370</td><td>VIEIRA & FIGUEIRA DOM</td><td>VENDAS</td><td>Cancelamento de Embarque</td><td>15/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>Pedido 446370 foi cancelado e substituido pelo pedido 446528 devido o código do produto cadastrado errado.</td></tr>
+
+                                                <tr><td>13</td><td>15/02/2011 17:21:33</td><td>Brasil</td><td>Variedades</td><td>444563</td><td>VIEIRA & FIGUEIRA DOM</td><td>FABRICA</td><td>Falta de produto</td><td>15/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>Devido a falta de Lisina 160009 o pedido ficou do dia 15 para 16/02 gerando uma estadia (R$ 250,00)</td></tr>
+
+                                                <tr><td>14</td><td>15/02/2011 17:22:48</td><td>Brasil</td><td>Variedades</td><td>445108</td><td>BORG</td><td>FABRICA</td><td>Falta de produto</td><td>15/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>Devido a falta de Lisina 160009 o pedido ficou do dia 15 para 16/02 gerando uma estadia </td></tr>
+
+                                                <tr><td>15</td><td>16/02/2011 18:44:47</td><td>India</td><td>Alimentos</td><td>441899</td><td>GREENROAD</td><td>FABRICA</td><td>Pré-stacking</td><td>15/02/2011</td><td>LUCAS</td><td></td><td></td><td>4</td><td></td><td>Enviamos os cntrs para o Tecondi em virtude da abertura de gate e o dead line estarem proximos.</td></tr>
+
+                                                <tr><td>16</td><td>16/02/2011 18:55:08</td><td>India</td><td>Perfumaria</td><td>443677</td><td>TSA</td><td>TRANSPORTADORA</td><td>Entrega em local incorreto</td><td>15/02/2011</td><td>LUCAS</td><td>0</td><td>0</td><td>1</td><td></td><td>Transportadora entregou a mercadoria no terminal do aeroporto de Guarulhos ao invés de Viracopos. Transportadora retirou a mercadoria do local incorreto e direcionou para o local correto.</td></tr>
+
+                                                <tr><td>17</td><td>16/02/2011 18:58:55</td><td>India</td><td>Alimentos</td><td>439740</td><td>GREENROAD</td><td>FABRICA</td><td>Pré-stacking</td><td>16/02/2011</td><td>LUCAS</td><td></td><td></td><td>1</td><td></td><td>Gate fechado</td></tr>
+
+                                                <tr><td>18</td><td>16/02/2011 19:03:22</td><td>India</td><td>Alimentos</td><td>437039</td><td>GREENROAD</td><td>FABRICA</td><td>Pré-stacking</td><td>16/02/2011</td><td>LUCAS</td><td></td><td></td><td>2</td><td></td><td>Enviamos os cntrs para o Tecondi patio 4 em virtude da data de abertura do gate e o dead line estarem proximos.</td></tr>
+
+                                                <tr><td>19</td><td>17/02/2011 14:55:33</td><td>India</td><td>Alimentos</td><td>445403</td><td>ALDA</td><td>VENDAS</td><td>Revisão de Pedido</td><td>17/02/2011</td><td>LUCAS</td><td>0</td><td>0</td><td>1</td><td></td><td>Vendas revisou o pedido para Embarque em abril. Cancelamos a programação de estufagem do dia 24/2.</td></tr>
+
+                                                <tr><td>20</td><td>18/02/2011 08:43:55</td><td>India</td><td>Variedades</td><td>445502</td><td>COVRE</td><td>TRANSPORTADORA</td><td>Atraso na Coleta</td><td>17/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>A covre recebeu a programação para o dia 17/02 com 4 pedidos porém não mandou caminhão suficiente, então a fábrica carregou os pedidos da industria e somente 1 da NA fomos informados somente as 17:00 e não tivemos tempo para mandar um caminhão carregar no</td></tr>
+
+                                                <tr><td>21</td><td>18/02/2011 08:45:33</td><td>India</td><td>Variedades</td><td>446377</td><td>COVRE</td><td>TRANSPORTADORA</td><td>Atraso na Coleta</td><td>17/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>A covre recebeu a programação para o dia 17/02 com 4 pedidos porém não mandou caminhão suficiente, então a fábrica carregou os pedidos da industria e somente 1 da NA fomos informados somente as 17:00 e não tivemos tempo para mandar um caminhão carregar no</td></tr>
+
+                                                <tr><td>22</td><td>18/02/2011 08:46:24</td><td>India</td><td>Variedades</td><td>446734</td><td>COVRE</td><td>TRANSPORTADORA</td><td>Atraso na Coleta</td><td>17/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>A covre recebeu a programação para o dia 17/02 com 4 pedidos porém não mandou caminhão suficiente, então a fábrica carregou os pedidos da industria e somente 1 da NA fomos informados somente as 17:00 e não tivemos tempo para mandar um caminhão carregar no</td></tr>
+
+                                                <tr><td>23</td><td>18/02/2011 08:48:35</td><td>Canada</td><td>Alimentos</td><td>439439</td><td>COOPERCARGA</td><td>TRANSPORTADORA</td><td>Atraso na Coleta</td><td>17/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>A covre recebeu a programação para o dia 17/02 com 4 pedidos porém não mandou caminhão suficiente, então a fábrica carregou os pedidos da industria e somente 1 da NA fomos informados somente as 17:00 e não tivemos tempo para mandar um caminhão carregar no</td></tr>
+
+                                                <tr><td>24</td><td>21/02/2011 16:35:30</td><td>India</td><td>Variedades</td><td>444939</td><td>BORG</td><td>TRANSPORTADORA</td><td>Atraso na Coleta</td><td>21/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>A transportadora não chegou em Limeira a tempo de carregar o aminogut, atrasando a coleta de lisina que estava programada para o dia seguinte em Valparaiso.</td></tr>
+
+                                                <tr><td>25</td><td>22/02/2011 08:55:21</td><td>Brasil</td><td>Variedades</td><td>70007545</td><td>ATDL DOM</td><td>VENDAS</td><td>Atraso no envio da NF</td><td>21/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>A nota foi enviada pela Cassab somente no fianl do dia e a fábrica identificou que alguns dados estavam errados, devido ao horário a Cassab não conseguiu reemir a nota no dia atrasando a viajem para em 1 dia</td></tr>
+
+                                                <tr><td>26</td><td>22/02/2011 16:03:30</td><td>Canada</td><td>Alimentos</td><td>444805</td><td>GREENROAD</td><td>TRANSPORTADORA</td><td>VEICULO QUEBRADO</td><td>22/02/2011</td><td>LUCAS</td><td>0</td><td>0</td><td>1</td><td></td><td>7</td></tr>
+
+                                                <tr><td>27</td><td>22/02/2011 16:07:01</td><td>Alemanha</td><td>Alimentos</td><td>439926</td><td>DALASTRA</td><td>TRANSPORTADORA</td><td>Pré-stacking</td><td>22/02/2011</td><td>LUCAS</td><td></td><td></td><td>11</td><td></td><td>0</td></tr>
+
+                                                <tr><td>28</td><td>22/02/2011 16:11:16</td><td>Canada</td><td>Alimentos</td><td>444805</td><td>GREENROAD</td><td>TRANSPORTADORA</td><td>Pré-stacking</td><td>22/02/2011</td><td>LUCAS</td><td></td><td></td><td>3</td><td></td><td>Autorizamos Pré-stacking de apenas 3x40 dos 4x40' programados para 22/2. Um dos veículos quebrou alterando a programação para 23/2.</td></tr>
+
+                                                <tr><td>29</td><td>24/02/2011 13:21:27</td><td>Brasil</td><td>Variedades</td><td>445868</td><td>PIETROBOM</td><td>TERMINAL</td><td>Posicionamento de container</td><td>22/02/2011</td><td>REBECCA</td><td>0</td><td></td><td>1</td><td></td><td>processo ref. ME 445868 foi selecionado para conferencia fisica a ser realizada em 23/11/10 as 14:00hrs</td></tr>
+
+                                                <tr><td>30</td><td>23/02/2011 16:29:52</td><td>Canada</td><td>Alimentos</td><td>432774</td><td>ALDA</td><td>LOGISTICA</td><td>Pré-stacking</td><td>23/02/2011</td><td>LUCAS</td><td></td><td></td><td>1</td><td></td><td>Antecipamos o carregamento deste cntr em virtude do cancelamento da estufagem referente a ME 437241 para aproveitamento do cntr já retirado e posto na fabrica.</td></tr>
+
+                                                <tr><td>31</td><td>24/02/2011 08:40:24</td><td>Canada</td><td>Alimentos</td><td>432774</td><td>ALDA</td><td>LOGISTICA</td><td>Pré-stacking</td><td>23/02/2011</td><td>LUCAS</td><td></td><td></td><td>1</td><td></td><td>Pré-stacking gerado por antecipação de carregamento desta ME em virtude da falta de produto para a ME 437241.</td></tr>
+
+                                                <tr><td>32</td><td>24/02/2011 08:42:35</td><td>Canada</td><td>Alimentos</td><td>444814</td><td>COVRE</td><td>CIA MARITIMA</td><td>Pré-stacking</td><td>23/02/2011</td><td>LUCAS</td><td></td><td></td><td>1</td><td></td><td>Enviamos os cntrs para Pré-stacking no P4 em virtude da abertura do gate x dead line.</td></tr>
+
+                                                <tr><td>33</td><td>24/02/2011 08:50:05</td><td>Canada</td><td>Alimentos</td><td>439926</td><td>DALASTRA</td><td>FABRICA</td><td>Pré-stacking</td><td>23/02/2011</td><td>LUCAS</td><td></td><td></td><td>9</td><td></td><td>Autorizamos Pré-stacking na Dalastra em virtude da capacidade de carregamento. Este lote compõe o lote carregado no dia 22/2.</td></tr>
+
+                                                <tr><td>34</td><td>24/02/2011 10:38:55</td><td>Brasil</td><td>Variedades</td><td>700075228</td><td>VIEIRA & FIGUEIRA DOM</td><td>VENDAS</td><td>Pedido incorreto</td><td>23/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>O produto foi carregado como Big Bag e o correto era sacaria, depois de carregado o caminhão precisou voltar para a expedição para trocar de produto, o caminhão saiu da fábrica no dia programado</td></tr>
+
+                                                <tr><td>35</td><td>24/02/2011 08:52:03</td><td>Argentina</td><td>Alimentos</td><td>439029</td><td>GREENROAD</td><td>CIA MARITIMA</td><td>Pré-stacking</td><td>24/02/2011</td><td>LUCAS</td><td></td><td></td><td>2</td><td></td><td>Autorizamos Pré-stacking no P4 em virtude da abertura do gate x dead line.</td></tr>
+
+                                                <tr><td>36</td><td>24/02/2011 10:40:17</td><td>Brasil</td><td>Variedades</td><td>70007490</td><td>ATDL DOM</td><td>VENDAS</td><td>Revisão de Pedido</td><td>24/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>O pedido foi colocado para sair de Pederneiras, no dia do carregamento transferiram para Valparaiso para atender a necessidade de Ajilys 30 na planta, fomos informados pela fábrica a alteração</td></tr>
+
+                                                <tr><td>37</td><td>25/02/2011 09:45:54</td><td>Brasil</td><td>Variedades</td><td>445204</td><td>VIEIRA & FIGUEIRA DOM</td><td>TRANSPORTADORA</td><td>Veiculo quebrado</td><td>24/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>O caminhão apresentou problemas mecânicos durante a viajem, o motorista precisou parar para concerta-lo atrasando a entrega em 1 dia</td></tr>
+
+                                                <tr><td>38</td><td>25/02/2011 16:25:41</td><td>Brasil</td><td>Variedades</td><td>446373</td><td>ATDL DOM</td><td>TRANSPORTADORA</td><td>Veiculo quebrado</td><td>25/02/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>O motorista teve um problema na roda e teve que parar para concertar, atrasando a entrega em um dia</td></tr>
+
+                                                <tr><td>39</td><td>01/03/2011 16:41:23</td><td>Alemanha</td><td>Alimentos</td><td>439916</td><td>MAERSK</td><td>TERMINAL</td><td>Devolução Container</td><td>25/02/2011</td><td>LUCAS</td><td>0</td><td>0</td><td>1</td><td></td><td>O terminal Brasmar liberou 10 unidades sem efetuar as lavagens solicitadas pela Dalastra. O cntr chegaram no patio da transportadoras fora do padrão alimento. Enviamos as fotos para a Maersk, a transportadora efetuou as lavagens e informou os custos para </td></tr>
+
+                                                <tr><td>40</td><td>01/03/2011 16:53:26</td><td>Canada</td><td>Alimentos</td><td>439267</td><td>ALDA</td><td>TERMINAL</td><td>Pré-stacking</td><td>25/02/2011</td><td>LUCAS</td><td></td><td></td><td>2</td><td>1066,37</td><td>Autorizamo Pré-stacking no Tecondi P4. Gate fechado em 25/2 com dead line 02/03-12hs.</td></tr>
+
+                                                <tr><td>41</td><td>01/03/2011 16:26:17</td><td>India</td><td>Alimentos</td><td>446168</td><td>DALASTRA</td><td>TRANSPORTADORA</td><td>Falta de Lacre</td><td>28/02/2011</td><td>LUCAS</td><td>0</td><td>0</td><td>1</td><td></td><td>Motorista não levou o lacre no dia do carregamento. O lacre ficou na cabine de outro caminhão. O cntr foi lacrado fora da fabrica e seguiu viagem.</td></tr>
+
+                                                <tr><td>42</td><td>01/03/2011 16:57:58</td><td>Canada</td><td>Alimentos</td><td>441289</td><td>COVRE</td><td>FABRICA</td><td>Pré-stacking</td><td>28/02/2011</td><td>LUCAS</td><td></td><td></td><td>8</td><td></td><td>Autorizamos o Pré-stacking na Covre em virtude da antecipação do carregamento por falta de capacidade de expedição na fabrica.</td></tr>
+
+                                                <tr><td>43</td><td>01/03/2011 15:07:56</td><td>Brasil</td><td>Variedades</td><td>448285</td><td>VIEIRA & FIGUEIRA DOM</td><td>VENDAS</td><td>Pedido incorreto</td><td>01/03/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>O pedido foi cadastrado como sacaria e o correto era Big Bag, identificaram o erro no dia do carregamento, </td></tr>
+
+                                                <tr><td>44</td><td>01/03/2011 16:14:24</td><td>India</td><td>Alimentos</td><td>445436</td><td>ALDA</td><td>TERMINAL</td><td>Pré-stacking</td><td>01/03/2011</td><td>LUCAS</td><td></td><td></td><td>1</td><td></td><td>A Transportadora Alda não conseguiu janela para depósito do cntr. Direcionamos a unidade para o TEVAL, dead line 02/03 18h.</td></tr>
+
+                                                <tr><td>45</td><td>01/03/2011 16:21:11</td><td>India</td><td>Alimentos</td><td>440862</td><td>ALDA</td><td>FABRICA</td><td>Pré-stacking</td><td>01/03/2011</td><td>LUCAS</td><td></td><td></td><td>4</td><td></td><td>Autorizamos Pré-stacking na Dalastra em virtude da antecipação do carregamento por falta de capacidade na fabrica.</td></tr>
+
+                                                <tr><td>46</td><td>01/03/2011 17:35:52</td><td>Argentina</td><td>Alimentos</td><td>439188</td><td>DALASTRA</td><td>LOGISTICA</td><td>Cancelamento Estufagem</td><td>01/03/2011</td><td>LUCAS</td><td>0</td><td>0</td><td>1</td><td></td><td>Cancelamos a programação de estufagem em virtude da falta de produto.</td></tr>
+
+                                                <tr><td>47</td><td>01/03/2011 17:52:18</td><td>Brasil</td><td>Variedades</td><td>447859</td><td>VIEIRA & FIGUEIRA DOM</td><td>VENDAS</td><td>Pedido incorreto</td><td>01/03/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>O CFOP do pedido estava cadastrado errada, a fábrica identificou somente no momento do faturamento, tiveram que voltar todo o processo para vendas corrigir o pedido</td></tr>
+
+                                                <tr><td>48</td><td>02/03/2011 09:54:45</td><td>Canada</td><td>Alimentos</td><td>437242</td><td>DALASTRA</td><td>LOGISTICA</td><td>Cancelamento Estufagem</td><td>01/03/2011</td><td>LUCAS</td><td>0</td><td>0</td><td>1</td><td></td><td>Cancelamos a estufagem do dia 3/3 por falta de produto</td></tr>
+
+                                                <tr><td>49</td><td>17/03/2011 19:46:35</td><td>India</td><td>Alimentos</td><td>446732</td><td>GREENROAD</td><td>LOGISTICA</td><td>Cancelamento Estufagem</td><td>01/03/2011</td><td>LUCAS</td><td>0</td><td>0</td><td>1</td><td></td><td>Cancelamos a estufagem em virtude da falta de produto na fabrica.</td></tr>
+
+                                                <tr><td>50</td><td>17/03/2011 19:47:17</td><td>India</td><td>Alimentos</td><td>446733</td><td>GREENROAD</td><td>LOGISTICA</td><td>Cancelamento Estufagem</td><td>01/03/2011</td><td>LUCAS</td><td>0</td><td>0</td><td>1</td><td></td><td>Cancelamos a estufagem em virtude da falta de produto na fabrica.</td></tr>
+
+                                                <tr><td>51</td><td>29/03/2011 11:46:53</td><td>Italia</td><td>Variedades</td><td>443951</td><td>DALASTRA</td><td>VENDAS</td><td>Frete complemento</td><td>01/03/2011</td><td>REBECCA</td><td>0</td><td>0</td><td>1</td><td></td><td>Referetne complemento de frete de KM de LM (AMG) e VP (LIS) -> STOxVPxLMxSTO</td></tr>
+
+                                                <tr><td>52</td><td>02/03/2011 12:05:52</td><td>India</td><td>Alimentos</td><td>445203</td><td>DALASTRA</td><td>FABRICA</td><td>Pré-stacking</td><td>02/03/2011</td><td>LUCAS</td><td></td><td></td><td>2</td><td></td><td>0</td></tr>
+
+                                                <tr><td>53</td><td>02/03/2011 12:07:23</td><td>Argentina</td><td>Alimentos</td><td>439109</td><td>DALASTRA</td><td>FABRICA</td><td>Pré-stacking</td><td>02/03/2011</td><td>LUCAS</td><td></td><td></td><td>14</td><td></td><td>0</td></tr>
+
+                                                <tr><td>54</td><td>02/03/2011 12:18:58</td><td>India</td><td>Alimentos</td><td>441901</td><td>ALDA</td><td>TERMINAL</td><td>Pré-stacking</td><td>02/03/2011</td><td>LUCAS</td><td></td><td></td><td>2</td><td>1066,37</td><td>0</td></tr>
+
+                                                <tr><td>55</td><td>03/03/2011 14:33:30</td><td>Canada</td><td>Alimentos</td><td>439442</td><td>COOPERCARGA</td><td>TRANSPORTADORA</td><td>Atraso na Coleta</td><td>02/03/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>As 3 carretas programadas para o dia 02/03 chegaram na fábrica após as 15:00 e não deu tempo de carregar no dia.</td></tr>
+
+                                                <tr><td>56</td><td>04/03/2011 09:19:36</td><td>Brasil</td><td>Variedades</td><td>440064</td><td>RA LOGISTICA</td><td>TRANSPORTADORA</td><td>Falta de Ordem de Coleta</td><td>02/03/2011</td><td>MICHELLE</td><td>0</td><td>0</td><td>1</td><td></td><td>A carreta que carregou dia 02/03 saiu somente no dia 03/04 pois a transportadora não enviou a ordem de coleta e quando enviou a ordem e o CRT no dia 03/04 estava com os dados de fábrica errados, a correção foi enviada somente a tarde.,</td></tr>
+
+
                                             </tbody>
-                                        </table>
-                                    </div>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div> 
+
                                 </div>
                             </div>
                         </div>
@@ -752,7 +530,6 @@
     <!--scrollbar-->
     <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     
-
     <!-- chartist -->
     <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
 
@@ -772,6 +549,13 @@
     <script type="text/javascript" src="js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
     <script type="text/javascript" src="js/plugins/jvectormap/vectormap-script.js"></script>    
 
+    <script type="text/javascript" src="js/prism.js"></script>
+    <!-- data-tables -->
+    <script type="text/javascript" src="js/plugins/data-tables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/plugins/data-tables/data-tables-script.js"></script>
+    <!-- chartist -->
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.js"></script>  
     
     <!--plugins.js - Some Specific JS codes for Plugin Settings-->
     <script type="text/javascript" src="js/plugins.js"></script>
@@ -785,13 +569,15 @@
         setTimeout(function() {
             Materialize.toast('<span>Novas ocorrencias.</span>', 1700);
         }, 2200);
-        // setTimeout(function() {
-        //     Materialize.toast('<span>Novas ocorrencias.</span><a class="btn-flat yellow-text" href="#">ver<a>', 3000);
-        // }, 15000);
+
+        if($(window).width() < 700) {
+            $('#main').attr('style', 'margin-top:0px !important');
+        }
     });
 
     $(function() {
       // Google Maps  
+
       $('#map-canvas').addClass('loading');    
       var latlng = new google.maps.LatLng(40.6700, -73.9400); // Set your Lat. Log. New York
       var settings = {
@@ -843,7 +629,7 @@
           pageView('http://demo.geekslabs.com/#address');
       });
     });
-    
+
     </script>
 </body>
 
